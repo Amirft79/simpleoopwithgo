@@ -6,14 +6,11 @@ type bill struct {
 	items  map[string]int
 }
 
-func newBill() bill {
+func newBill(name string, family string, items map[string]int) bill {
 	b := bill{
-		name:   "amirhossein",
-		family: "reza",
-		items: map[string]int{
-			"student id": 98234,
-			"subject":    3,
-		},
+		name:   name,
+		family: family,
+		items:  items,
 	}
 	return b
 }
